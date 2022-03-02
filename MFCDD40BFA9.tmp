@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>project_2</title>
+<link rel="project_2" type="text/css" href="projet_2_styles.css">
+</head>
+
+<body>
+
+<script src="project_2_java.js"></script>
+	<a onClick="myAudioFunction('A');"> <img src="project2/images/piano2.jpeg" alt="piano"> </a>
+<script>
+var clicks= 0;
+	var aAudio = new Audio('sound/bb.wav');
+	function myAudioFunction(letter) {
+		clicks = clicks+1;
+		if (clicks ==2){
+			aAudio.play();}
+	}
+	
+	</script>
+
+
+	
+</body>
+</html>

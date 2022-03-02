@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>choices</title>
+	<link rel="choices" type="text/css" href="choices_styles.css">
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+}
+body {
+  background-color: whitesmoke;
+}
+p{
+	font-size: 30px;
+	text-align: center;
+	}
+</style>
+</head>
+
+<body>
+<p id="no"> </p>
+<!-- cant get two seperate buttons... for now at least just have one button and add sheet music later
+	<script src="choices_java.js"></script>
+<a onClick="myFunction('A');"> <img src="images/music_sheet_trans.png" alt="music"> </a>
+<script>
+var clicks= 0;
+	function myFunction(letter) {
+		clicks = clicks+1;
+		if (clicks ==1){
+			document.getElementById("no").innerHTML = "no";}
+		if (clicks ==2){
+			document.getElementById("no").innerHTML = "No";}
+		if (clicks ==3){
+			document.getElementById("no").innerHTML = "NO!";}
+	}
+	</script>
+	-->
+<a onClick="myFunction('B');"> <img src="images/comp_trans.png" alt="comp" height="700"> </a>
+<script>
+var clicks= 0;
+	function myFunction(letter) {
+		clicks = clicks+1;
+		if (clicks ==1){
+			document.getElementById("no").innerHTML = "Is this what you want?";}
+		if (clicks ==2){
+			document.getElementById("no").innerHTML = "Are you sure?";}
+		if (clicks ==3){
+			document.getElementById("no").innerHTML = "Fine then";}
+		if (clicks ==4){
+			window.open(
+		"project_2.final.html","_self")}
+	}
+	</script>
+</body>
+</html>

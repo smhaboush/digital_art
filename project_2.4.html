@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>project_2.4</title>
+	<link rel="project_2" type="text/css" href="projet_2.4_styles.css">
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+}
+body {
+  background-color: black;
+}
+</style>
+</head>
+
+<body>
+	<script src="project_2.4_java.js"></script>
+	<a onClick="myAudioFunction('A');"> <img src="images/piano1.jpg" alt="piano" height="500"> </a>
+<script>
+var clicks= 0;
+	var aAudio = new Audio('sound/bb.wav');
+	function myAudioFunction(letter) {
+		clicks = clicks+1;
+		if (clicks ==1){
+			aAudio.play();}
+		if (clicks ==2){
+			new Audio('sound/f.wav').play();}
+		if (clicks ==3){
+			new Audio('sound/a.wav').play();}
+		if (clicks ==4){
+			window.open(
+		"ms_paint.html","_self")}
+	
+	}
+	</script>
+</body>
+</html>

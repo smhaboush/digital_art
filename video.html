@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>video</title>
+</head>
+
+<body>
+<a href="project_2.5.html"></a>
+<video autoplay controls muted id="https://www.youtube.com/embed/OEfe9hV_524">
+<source id="mp4" src="MVI_6378 copy.MP4">
+</video>
+</body>
+<script>
+function listen(evnt, elem, func) {
+    if (elem.addEventListener) // W3C DOM
+    elem.addEventListener(evnt, func, false);
+    else if (elem.attachEvent) { // IE DOM
+        var r = elem.attachEvent("on" + evnt, func);
+        return r;
+    }
+    else window.alert('I\'m sorry, I\'m afraid I can\'t do that.');
+}
+
+listen("ended", document.getElementById('https://www.youtube.com/embed/OEfe9hV_524'), DoSomething);
+
+function DoSomething() {
+window.open("project_2.5.html");
+}
+</script>
+<!-- cant get video to work and need to find safe converter-->
+</html>
